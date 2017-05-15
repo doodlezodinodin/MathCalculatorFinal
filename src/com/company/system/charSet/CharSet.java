@@ -1,4 +1,4 @@
-package com.company.calculator.charSet;
+package com.company.system.charSet;
 
 /**
  * Created by alexander.grankin on 5/15/2017.

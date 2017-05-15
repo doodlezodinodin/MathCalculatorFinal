@@ -1,4 +1,4 @@
-package com.company.stringInput;
+package com.company.system.stringInput;
 
 import java.util.Scanner;
 
