@@ -18,15 +18,16 @@ public class SymbolForCloseParenthesis implements Error{
         CharSet charSet = new CharSet();
         boolean boolError = false;
 
-        for (String i : list) {
-            for (int j = 0; j < i.length(); j++) {
-                if (charSet.charNumbers(i.charAt(j))) {
-                    System.out.println("Error: After the closed parentheses must be an expression.");
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (list.get(i).equals("(")) {
+                if (!charSet.charSign(list.get(i + 1))) {
+                    System.out.println("Error: After the brackets must be of arithmetic sign.");
                     boolError = true;
-                } else boolError = false;
-                if (boolError) break;
+                    break;
+                } else {
+                    boolError = false;
+                }
             }
-            if (boolError) break;
         }
         return boolError;
     }

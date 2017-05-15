@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb7b16b7-75ca-41ef-9ea3-a1435c2baf8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForCloseParenthesis.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MathCalculatorFinal/com/company/system/checkErrors/CheckErrors.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/system/checkErrors/CheckErrors.java" afterPath="$PROJECT_DIR$/src/com/company/system/checkErrors/Errors.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForParenthesis.java" afterPath="$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForOpenParenthesis.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MathCalculatorFinal/com/company/calculator/Calculator.class" afterPath="$PROJECT_DIR$/out/production/MathCalculatorFinal/com/company/calculator/Calculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MathCalculatorFinal/com/company/system/charSet/CharSet.class" afterPath="$PROJECT_DIR$/out/production/MathCalculatorFinal/com/company/system/charSet/CharSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/calculator/Calculator.java" afterPath="$PROJECT_DIR$/src/com/company/calculator/Calculator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/system/charSet/CharSet.java" afterPath="$PROJECT_DIR$/src/com/company/system/charSet/CharSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForCloseParenthesis.java" afterPath="$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForCloseParenthesis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForOpenParenthesis.java" afterPath="$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForOpenParenthesis.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
@@ -43,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Errors.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Errors.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/system/checkErrors/Errors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,9 +52,21 @@
       <file leaf-file-name="CharSet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/system/charSet/CharSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="34" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SymbolForOpenParenthesis.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForOpenParenthesis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForCloseParenthesis.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="23" column="101" lean-forward="true" selection-start-line="23" selection-start-column="101" selection-end-line="23" selection-end-column="101" />
+              <caret line="23" column="92" lean-forward="false" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,10 +125,10 @@
         <option value="$PROJECT_DIR$/src/com/company/system/checkErrors/CountBrackets.java" />
         <option value="$PROJECT_DIR$/src/com/company/system/checkErrors/CheckErrors.java" />
         <option value="$PROJECT_DIR$/src/com/company/calculator/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/system/checkErrors/Errors.java" />
         <option value="$PROJECT_DIR$/src/com/company/system/charSet/CharSet.java" />
         <option value="$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForOpenParenthesis.java" />
         <option value="$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForCloseParenthesis.java" />
-        <option value="$PROJECT_DIR$/src/com/company/system/checkErrors/Errors.java" />
       </list>
     </option>
   </component>
@@ -749,36 +755,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/calculator/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/system/checkErrors/UnknownSymbol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/system/charSet/CharSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForOpenParenthesis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -796,20 +776,46 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForCloseParenthesis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="23" column="101" lean-forward="true" selection-start-line="23" selection-start-column="101" selection-end-line="23" selection-end-column="101" />
+          <caret line="23" column="92" lean-forward="false" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/system/checkErrors/Errors.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/system/checkErrors/SymbolForOpenParenthesis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/system/charSet/CharSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/system/checkErrors/Errors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/calculator/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

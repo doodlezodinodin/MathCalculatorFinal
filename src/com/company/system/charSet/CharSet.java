@@ -28,7 +28,7 @@ public class CharSet {
         return boolCharLetters;
     }
 
-    public boolean charBrackets(String symbol) {
+    public boolean charSign(String symbol) {
         boolean boolCharBracket;
         switch (symbol) {
             case "*": boolCharBracket = true;

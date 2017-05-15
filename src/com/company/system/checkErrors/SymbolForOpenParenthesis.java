@@ -21,7 +21,7 @@ public class SymbolForOpenParenthesis implements Error{
 
         for (int i = 0; i < list.size() - 1; i++) {
             if (list.get(i).equals("(")) {
-                if (charSet.charBrackets(list.get(i + 1))) {
+                if (charSet.charSign(list.get(i + 1))) {
                     System.out.println("Error: Invalid character after the parentheses.");
                     boolError = true;
                     break;
