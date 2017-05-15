@@ -5,9 +5,7 @@ import com.company.calculator.expressions.Expressions;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/**
- * Created by alex on 14.05.2017.решает пример с скобками
- */
+
 public class ParseList {
     public String make(List<String> list) {
         for (String s : list) {

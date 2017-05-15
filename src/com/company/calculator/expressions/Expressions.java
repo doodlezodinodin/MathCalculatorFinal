@@ -9,14 +9,14 @@ public class Expressions {
     }
 
     public Double division(double a, double b) {
-        return a * b;
+        return a / b;
     }
 
     public Double addition(double a, double b) {
-        return a * b;
+        return a + b;
     }
 
     public Double subtraction(double a, double b) {
-        return a * b;
+        return a - b;
     }
 }
