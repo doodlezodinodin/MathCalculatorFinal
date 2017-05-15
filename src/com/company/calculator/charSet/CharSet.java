@@ -13,7 +13,22 @@ public class CharSet {
                 boolCharLetters = true;
                 break;
             } else boolCharLetters = false;
-
         return boolCharLetters;
+    }
+
+    public boolean charBracket(String symbol) {
+        boolean boolCharBracket;
+        switch (symbol) {
+            case "*": boolCharBracket = true;
+            break;
+            case "/": boolCharBracket = true;
+                break;
+            case "+": boolCharBracket = true;
+                break;
+            case "-": boolCharBracket = true;
+                break;
+            default: boolCharBracket = false;
+        }
+        return boolCharBracket;
     }
 }
