@@ -1,7 +1,6 @@
 package com.company.system.checkErrors;
 
-import com.company.calculator.Calculator;
-import com.company.system.charSet.CharSet;
+import com.company.calculator.parse.ParseString;
 
 import java.util.List;
 
@@ -9,65 +8,48 @@ import java.util.List;
  * Created by alexander.grankin on 5/15/2017.
  */
 public class CheckErrors {
-    public boolean searchErrors(String text) {
-        Calculator calculator = new Calculator();
-        List<String> list = calculator.parseString(text);
-        CharSet charSet = new CharSet();
 
-        boolean boolCheckError = false;
+    Error errorState;
 
-        for (String i : list) {
-            for (int j = 0; j < i.length(); j++) {
-                if (charSet.charLetters(i.charAt(j))) {
-                    System.out.println("Error: Unknown character.");
-                    boolCheckError = true;
-                } else if (correctBrackets(list)) {
-                    System.out.println("Error: Invalid character after the parentheses.");
-                    boolCheckError = true;
-                } else if (correctNumberBrackets(list)) {
-                    System.out.println("Error: Not the right number of brackets");
-                    boolCheckError = true;
-                } else boolCheckError = false;
+    public boolean execute(String text) {
+        boolean boolError;
 
-                if (boolCheckError) break;
-            }
-            if (boolCheckError) break;
+        ParseString parseString = new ParseString();
+        List<String> list = parseString.parse(text);
+
+        errorState = new CountBrackets(list);
+        boolError = checkError();
+
+        int i = 0;
+        while (i < 3) {
+            if (!boolError) {
+                nextErrors(list);
+                boolError = checkError();
+                i++;
+            } else break;
         }
-        return boolCheckError;
-    }
 
-    private boolean correctBrackets(List<String> list) {
-        boolean boolError = false;
-        CharSet charSet = new CharSet();
-
-        for (int i = 0; i < list.size() - 1; i++) {
-            if (list.get(i).equals("(")) {
-                if (charSet.charBracket(list.get(i + 1))) {
-                    boolError = true;
-                    break;
-                } else {
-                    boolError = false;
-                }
-            }
-        }
         return boolError;
     }
 
-    private boolean correctNumberBrackets(List<String> list) {
-        int countOpenBracket = 0;
-        int countCloseBracket = 0;
-
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).equals("(")) {
-                countOpenBracket++;
-            } else if (list.get(i).equals(")")) {
-                countCloseBracket++;
-            }
-        }
-
-        if (countOpenBracket != countCloseBracket) return true;
-        else return false;
+    private void setErrorState(Error errorState) {
+        this.errorState = errorState;
     }
+
+    public void nextErrors(List<String> list) {
+        if (errorState instanceof CountBrackets) {
+            setErrorState(new SymbolForParenthesis(list));
+        } else if (errorState instanceof SymbolForParenthesis) {
+            setErrorState(new UnknownSymbol(list));
+        } else if (errorState instanceof UnknownSymbol) {
+            setErrorState(new CountBrackets(list));
+        }
+    }
+
+    private boolean checkError() {
+        return errorState.checkError();
+    }
+
 }
 
 

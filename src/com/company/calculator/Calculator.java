@@ -20,9 +20,10 @@ public class Calculator {
         inputExample();
 
         CheckErrors checkErrors = new CheckErrors();
+        ParseString parseString = new ParseString();
 
-        if (!checkErrors.searchErrors(example)) {
-            List<String> list = parseString(example);
+        if (!checkErrors.execute(example)) {
+            List<String> list = parseString.parse(example);
 
             ParseList parseList = new ParseList();
             parseList.executeParse(list);
@@ -38,16 +39,5 @@ public class Calculator {
         example = stringInput.enter();
     }
 
-    public List<String> parseString(String str) {
-        List<String> list = new CopyOnWriteArrayList<>();
 
-        String delimiters = "+-*/()";
-        StringTokenizer sTok = new StringTokenizer(str, delimiters, true);
-
-        while (sTok.hasMoreTokens()) {
-            list.add(sTok.nextToken());
-        }
-
-        return list;
-    }
 }
