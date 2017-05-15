@@ -1,13 +1,10 @@
 package com.company.calculator;
 
-import com.company.system.charSet.CharSet;
 import com.company.calculator.parse.*;
-import com.company.system.checkErrors.CheckErrors;
+import com.company.system.checkErrors.Errors;
 import com.company.system.stringInput.StringInput;
 
 import java.util.List;
-import java.util.StringTokenizer;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Created by alex on 14.05.2017.
@@ -19,10 +16,11 @@ public class Calculator {
     public void execute() {
         inputExample();
 
-        CheckErrors checkErrors = new CheckErrors();
-        ParseString parseString = new ParseString();
+        Errors checkErrors = new Errors();
+
 
         if (!checkErrors.execute(example)) {
+            ParseString parseString = new ParseString();
             List<String> list = parseString.parse(example);
 
             ParseList parseList = new ParseList();

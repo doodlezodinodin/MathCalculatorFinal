@@ -16,7 +16,19 @@ public class CharSet {
         return boolCharLetters;
     }
 
-    public boolean charBracket(String symbol) {
+    public boolean charNumbers(char symbol) {
+        boolean boolCharLetters = false;
+        String text = "0123456789";
+
+        for (int i = 0; i < text.length(); i++)
+            if (symbol == text.charAt(i)) {
+                boolCharLetters = true;
+                break;
+            } else boolCharLetters = false;
+        return boolCharLetters;
+    }
+
+    public boolean charBrackets(String symbol) {
         boolean boolCharBracket;
         switch (symbol) {
             case "*": boolCharBracket = true;
@@ -26,6 +38,8 @@ public class CharSet {
             case "+": boolCharBracket = true;
                 break;
             case "-": boolCharBracket = true;
+                break;
+            case ")": boolCharBracket = true;
                 break;
             default: boolCharBracket = false;
         }

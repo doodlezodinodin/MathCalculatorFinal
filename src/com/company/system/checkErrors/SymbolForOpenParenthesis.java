@@ -7,11 +7,11 @@ import java.util.List;
 /**
  * Created by alexander.grankin on 5/15/2017.
  */
-public class SymbolForParenthesis implements Error{
+public class SymbolForOpenParenthesis implements Error{
 
     private List<String> list;
 
-    public SymbolForParenthesis(List<String> list) {
+    public SymbolForOpenParenthesis(List<String> list) {
         this.list = list;
     }
 
@@ -21,7 +21,7 @@ public class SymbolForParenthesis implements Error{
 
         for (int i = 0; i < list.size() - 1; i++) {
             if (list.get(i).equals("(")) {
-                if (charSet.charBracket(list.get(i + 1))) {
+                if (charSet.charBrackets(list.get(i + 1))) {
                     System.out.println("Error: Invalid character after the parentheses.");
                     boolError = true;
                     break;

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by alexander.grankin on 5/15/2017.
  */
-public class CheckErrors {
+public class Errors {
 
     Error errorState;
 
@@ -21,7 +21,7 @@ public class CheckErrors {
         boolError = checkError();
 
         int i = 0;
-        while (i < 3) {
+        while (i < 4) {
             if (!boolError) {
                 nextErrors(list);
                 boolError = checkError();
@@ -38,10 +38,12 @@ public class CheckErrors {
 
     public void nextErrors(List<String> list) {
         if (errorState instanceof CountBrackets) {
-            setErrorState(new SymbolForParenthesis(list));
-        } else if (errorState instanceof SymbolForParenthesis) {
+            setErrorState(new SymbolForOpenParenthesis(list));
+        } else if (errorState instanceof SymbolForOpenParenthesis) {
             setErrorState(new UnknownSymbol(list));
         } else if (errorState instanceof UnknownSymbol) {
+            setErrorState(new SymbolForCloseParenthesis(list));
+        } else if (errorState instanceof SymbolForCloseParenthesis) {
             setErrorState(new CountBrackets(list));
         }
     }
